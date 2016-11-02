@@ -6,6 +6,7 @@ var Client = require('./lib/client');
  * @constructor
  * @property {BankAccount} BankAccount
  * @property {Employee} Employee
+ * @property {Contract} Contract
  * @property {Promise} Promise
  */
 function Arhia(settings) {
@@ -18,6 +19,7 @@ function Arhia(settings) {
 
   this.BankAccount = Arhia.BankAccount.enclose(this);
   this.Employee = Arhia.Employee.enclose(this);
+  this.Contract = Arhia.Contract.enclose(this);
 
   // create a custom property to allows to redefine on hot the Promise to use in the current instance (for tests...)
   // without modifying the default static in the class
@@ -66,6 +68,6 @@ Arhia.Promise = Promise;
 Arhia.Client = Client;
 Arhia.BankAccount = require('./lib/api/bankAccount');
 Arhia.Employee = require('./lib/api/employee');
-
+Arhia.Contract = require('./lib/api/contract');
 
 module.exports = Arhia;

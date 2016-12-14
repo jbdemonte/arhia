@@ -21,6 +21,7 @@ function Arhia(settings) {
   this.BankAccount = Arhia.BankAccount.enclose(this);
   this.Employee = Arhia.Employee.enclose(this);
   this.Company = Arhia.Company.enclose(this);
+  this.PayrollEntity = Arhia.PayrollEntity.enclose(this);
   this.PayrollVariable = Arhia.PayrollVariable.enclose(this);
   this.Contract = Arhia.Contract.enclose(this);
 
@@ -72,6 +73,7 @@ Arhia.Client = Client;
 Arhia.BankAccount = require('./lib/api/bankAccount');
 Arhia.Employee = require('./lib/api/employee');
 Arhia.Company = require('./lib/api/company');
+Arhia.PayrollEntity = require('./lib/api/payrollEntity');
 Arhia.PayrollVariable = require('./lib/api/payrollVariable');
 Arhia.Contract = require('./lib/api/contract');
 

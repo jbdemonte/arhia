@@ -1,6 +1,6 @@
 {
   "name": "arhia",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "Arhia object modeling",
   "main": "index.js",
   "scripts": {
